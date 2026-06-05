@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 33 33% 98%;
+    --foreground: 20 14.3% 4.1%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+
+    --primary: 24 51% 47%;
+    --primary-foreground: 60 9.1% 97.8%;
+
+    --secondary: 60 4.8% 95.9%;
+    --secondary-foreground: 24 9.8% 10%;
+
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+
+    --accent: 12 76% 61%;
+    --accent-foreground: 24 9.8% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 24 5.4% 63.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 60 9.1% 97.8%;
+
+    --card: 20 14.3% 4.1%;
+    --card-foreground: 60 9.1% 97.8%;
+
+    --popover: 20 14.3% 4.1%;
+    --popover-foreground: 60 9.1% 97.8%;
+
+    --primary: 60 9.1% 97.8%;
+    --primary-foreground: 24 9.8% 10%;
+
+    --secondary: 12 6.5% 15.1%;
+    --secondary-foreground: 60 9.1% 97.8%;
+
+    --muted: 12 6.5% 15.1%;
+    --muted-foreground: 24 5.4% 63.9%;
+
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 60 9.1% 97.8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 60 9.1% 97.8%;
+
+    --border: 12 6.5% 15.1%;
+    --input: 12 6.5% 15.1%;
+    --ring: 24 5.4% 63.9%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-safari;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-heading;
+  }
+}
+
+/* Enhanced modern animations */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(1deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 0 0 rgba(229, 187, 125, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(229, 187, 125, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(229, 187, 125, 0); }
+}
+
+@keyframes slide-in-left {
+  from { transform: translateX(-100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slide-in-right {
+  from { transform: translateX(100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slide-in-bottom {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes rotate-in {
+  from { transform: rotate(-10deg); opacity: 0; }
+  to { transform: rotate(0); opacity: 1; }
+}
+
+/* Modern hover effects */
+@keyframes shine {
+  0% { background-position: -100% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s infinite;
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.5s forwards;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.5s forwards;
+}
+
+.animate-slide-in-bottom {
+  animation: slide-in-bottom 0.5s forwards;
+}
+
+.animate-rotate-in {
+  animation: rotate-in 0.5s forwards;
+}
+
+/* Staggered delays for lists */
+.stagger-delay-1 { animation-delay: 0.1s; }
+.stagger-delay-2 { animation-delay: 0.2s; }
+.stagger-delay-3 { animation-delay: 0.3s; }
+.stagger-delay-4 { animation-delay: 0.4s; }
+.stagger-delay-5 { animation-delay: 0.5s; }
+
+/* Modern Hero section */
+.hero-section {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1469041797191-50ace28483c3');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, rgba(167, 76, 40, 0.2), transparent 70%);
+  z-index: 1;
+}
+
+.hero-section > div {
+  position: relative;
+  z-index: 2;
+}
+
+/* Modern interactive cards and elements */
+.service-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  @apply backdrop-blur-sm bg-white/80 border border-white/20;
+}
+
+.service-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  @apply bg-white/90;
+}
+
+.interactive-image {
+  transition: all 0.5s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.interactive-image img {
+  transition: all 0.5s ease;
+}
+
+.interactive-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Scroll reveal classes */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Modern button animations */
+.btn-animate {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.btn-animate::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: all 0.6s ease;
+}
+
+.btn-animate:hover::before {
+  left: 100%;
+}
+
+/* Modern glass morphism */
+.glass-card {
+  @apply backdrop-blur-md bg-white/20 border border-white/20 shadow-lg;
+}
+
+/* Modern text highlight */
+.highlight {
+  @apply relative inline-block;
+}
+
+.highlight::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-full h-1 bg-namibia-terracotta/40 -z-10;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease;
+}
+
+.highlight:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Simple Hero Text Fade-in Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-title-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.hero-subtitle-fade-in {
+  opacity: 0; /* Start hidden */
+  animation: fadeInUp 1s ease-out 0.5s forwards; /* Delay subtitle */
+}
+
+/* Ensure page hero takes up space */
+.page-hero {
+  min-height: 40vh; /* Adjust as needed */
+}
+
+/* --- Gallery Scrolling Rows --- */
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); } /* Scroll one full width */
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(-100%); } /* Start from the duplicated content */
+  100% { transform: translateX(0); }
+}
+
+.scrolling-wrapper {
+  @apply flex overflow-hidden relative w-full select-none;
+  /* Optional: Add mask for fading edges */
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+}
+
+.scrolling-row {
+  @apply flex-shrink-0 flex items-center justify-around min-w-full; /* Ensure content fills at least the width */
+  animation-duration: 60s; /* Adjust speed */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.scrolling-row.scroll-left {
+  animation-name: scroll-left;
+}
+
+.scrolling-row.scroll-right {
+  animation-name: scroll-right;
+}
+
+/* Pause animation on hover */
+.scrolling-wrapper:hover .scrolling-row {
+  animation-play-state: paused;
+}
+
+/* Individual image styling within the row */
+.scrolling-row .gallery-image-item {
+  @apply w-48 h-48 md:w-64 md:h-64 object-cover rounded-lg shadow-md mx-2 md:mx-4 flex-shrink-0 cursor-pointer transition-transform duration-300 ease-in-out;
+}
+
+.scrolling-wrapper:hover .gallery-image-item {
+   @apply transform scale-105 z-10 shadow-xl;
+}
+/* --- End Gallery Scrolling Rows --- */

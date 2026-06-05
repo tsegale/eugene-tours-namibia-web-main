@@ -1,0 +1,66 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "destinations": "Destinations",
+    "gallery": "Gallery",
+    "about": "About",
+    "contact": "Contact",
+    "bookNow": "Book Now"
+  },
+  "hero": {
+    "title": "Experience Namibia Like Never Before",
+    "subtitle": "Premium tours and transfers showcasing the pristine landscapes and cultural heritage of Namibia",
+    "bookTour": "Book a Tour",
+    "contactUs": "Contact Us"
+  },
+  "about": {
+    "title": "About Eugene Tours",
+    "description1": "Eugene Tours and Transfers is a premier tour and transfer operator based in Walvis Bay, Namibia. Registered with the Namibia Tourism Board, we pride ourselves on delivering exceptional experiences and professional transportation services throughout Namibia.",
+    "description2": "Our team of experienced guides and drivers are passionate about showcasing the natural beauty, wildlife, and cultural heritage of Namibia to visitors from around the world.",
+    "description3": "Whether you need an airport transfer, cruise excursion, or a comprehensive tour of Namibia's highlights, we offer reliable, comfortable, and personalized services tailored to your needs.",
+    "officialRecognition": "Official Recognition",
+    "officialRecognitionDesc": "Proudly registered with the Namibia Tourism Board",
+    "location": "Location",
+    "locationDesc": "Park View, Hage Geingob Street, Walvis Bay, Namibia",
+    "vehicleFleet": "Vehicle Fleet",
+    "vehicleFleetDesc": "Modern, comfortable vehicles for all group sizes",
+    "ourFleet": "Our Fleet",
+    "fleetDesc": "Modern, comfortable vehicles ready for your Namibian adventure"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Experience Namibia with our premium tour and transfer services",
+    "airportTransfers": {
+      "title": "Airport Transfers",
+      "description": "Professional transfers to/from Windhoek International and Walvisbay International Airport."
+    },
+    "cruiseExcursions": {
+      "title": "Cruise Excursions",
+      "description": "Specialized tours for cruise ship passengers visiting Walvisbay and Swakopmund."
+    },
+    "namibiaTours": {
+      "title": "Namibia Tours",
+      "description": "Customized tours throughout Namibia showcasing the country's natural beauty and culture."
+    },
+    "privateTransfers": {
+      "title": "Private Transfers",
+      "description": "Comfortable and reliable private transfers throughout Namibia for individuals and groups."
+    }
+  },
+  "tourDetails": {
+    "title": "Eugene Tours and Transfers. Namibia Walvisbay Swakopmund Excursions.",
+    "subtitle": "Day trips for cruise ship passengers.",
+    "description": "We visit the Walvisbay Lagoon (pelicans and flamingos) – The pink salt lakes – Dune 5 (beer, refreshments, snacks included) – Swakopmund town (2 to 3 hours) – The Moon landscape – Goani Gontes Oasis – The Welwitchia plants – Dune 7 (admission at your own cost)",
+    "booking": "Bookings WhatsApp +264817055147, vdmshuttle@gmail.com, eugene@eugenetours.net",
+    "price": "75 Euros per person",
+    "payment": "Payment is made on the tour. Cash payment in Euros or card payment possible."
+  },
+  "socialFeedback": {
+    "title": "Guest Feedback",
+    "subtitle": "See what our guests have to say about their experiences with Eugene Tours & Transfers on Facebook.",
+    "seeMoreReviews": "See More Reviews on Facebook",
+    "scrollHint": "← Scroll to see more →"
+  }
+}
+
