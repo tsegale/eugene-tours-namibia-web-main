@@ -80,6 +80,7 @@ const Navbar = () => {
             <NavLink to="/" className={getNavLinkClass}>{t('navbar.home')}</NavLink>
             <NavLink to="/services" className={getNavLinkClass}>{t('navbar.services')}</NavLink>
             <NavLink to="/destinations" className={getNavLinkClass}>{t('navbar.destinations')}</NavLink>
+            <NavLink to="/tours" className={getNavLinkClass}>{t('navbar.tours')}</NavLink>
             <NavLink to="/gallery" className={getNavLinkClass}>{t('navbar.gallery')}</NavLink>
             <NavLink
               to="/#about"
@@ -142,6 +143,7 @@ const Navbar = () => {
             <NavLink to="/" className={getMobileNavLinkClass} onClick={() => setIsMobileMenuOpen(false)}>{t('navbar.home')}</NavLink>
             <NavLink to="/services" className={getMobileNavLinkClass} onClick={() => setIsMobileMenuOpen(false)}>{t('navbar.services')}</NavLink>
             <NavLink to="/destinations" className={getMobileNavLinkClass} onClick={() => setIsMobileMenuOpen(false)}>{t('navbar.destinations')}</NavLink>
+            <NavLink to="/tours" className={getMobileNavLinkClass} onClick={() => setIsMobileMenuOpen(false)}>{t('navbar.tours')}</NavLink>
             <NavLink to="/gallery" className={getMobileNavLinkClass} onClick={() => setIsMobileMenuOpen(false)}>{t('navbar.gallery')}</NavLink>
             <NavLink
               to="/#about"

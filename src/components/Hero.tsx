@@ -11,6 +11,7 @@ import moonlandscapeImg from '@/assets/moonlack.jpg';
 import sossusvleiImg from '@/assets/Sossulveli.jpg';
 import windhoekImg from '@/assets/windhoek.jpg';
 
+
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -18,10 +19,10 @@ const Hero = () => {
   
   // Array of background images to cycle through
   const backgroundImages = [
-    etoshaImg, // Etosha National Park
-    moonlandscapeImg, // Moon landscape
-    sossusvleiImg, // Sossusvlei dunes
-    windhoekImg, // Windhoek city
+    etoshaImg,
+    moonlandscapeImg,
+    sossusvleiImg,
+    windhoekImg,
   ];
   
   useEffect(() => {
@@ -56,19 +57,25 @@ const Hero = () => {
     <section className="hero-section min-h-[100vh] flex items-center justify-center text-white relative overflow-hidden">
       {/* Background images carousel with fade transition */}
       {backgroundImages.map((image, index) => (
-        <div 
+        <div
           key={index}
-          className="absolute inset-0 bg-cover bg-center transition-opacity duration-2000"
-          style={{ 
+          className="bg-cover bg-center"
+          style={{
+            position: 'absolute',
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
             backgroundImage: `url(${image})`,
             opacity: currentImageIndex === index ? 1 : 0,
-            zIndex: currentImageIndex === index ? 1 : 0
+            zIndex: currentImageIndex === index ? 2 : 0,
+            transition: 'opacity 1.5s ease-in-out',
           }}
         />
       ))}
       
       {/* Overlay for better text visibility */}
-      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm z-10"></div>
+      <div className="absolute inset-0 bg-black/50 z-10"></div>
       
       {/* Modern animated background elements with glassmorphism */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-20">

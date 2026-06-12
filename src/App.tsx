@@ -9,6 +9,7 @@ import BookingPage from './pages/BookingPage';
 import ServicesPage from './pages/ServicesPage';
 import DestinationsPage from './pages/DestinationsPage';
 import GalleryPage from './pages/GalleryPage';
+import ToursPage from './pages/ToursPage';
 import { useEffect } from 'react';
 import logo from './assets/logo.png'; // Import your logo
 import './i18n'; // Initialize i18n
@@ -41,6 +42,7 @@ const App = () => {
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/destinations" element={<DestinationsPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
+            <Route path="/tours" element={<ToursPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
