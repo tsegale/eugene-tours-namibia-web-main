@@ -34,8 +34,8 @@ const destinations: DestinationProps[] = [
     image: pinkLakesImg,
   },
   {
-    name: 'Namib Dunes (Dune 7)',
-    description: 'Experience the towering sand dunes of the Namib Desert, including the famous Dune 7, offering breathtaking views and adventure.',
+    name: 'Namib Dunes (Dune 5)',
+    description: 'Experience the towering sand dunes of the Namib Desert, including the famous Dune 5, offering breathtaking views and adventure.',
     image: namibDunesImg,
   },
   {

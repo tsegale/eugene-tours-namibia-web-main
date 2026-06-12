@@ -66,8 +66,7 @@ const TourDetails = () => {
                   'Swakopmund town (2-3 hours)',
                   'Moon Landscape',
                   'Goani Gontes Oasis',
-                  'Welwitchia Plants',
-                  'Dune 7 (admission extra)'
+                  'Welwitchia Plants'
                 ].map((feature, index) => (
                   <div key={index} className="bg-gradient-to-r from-namibia-sand/20 to-namibia-terracotta/10 rounded-lg p-4 text-center">
                     <div className="w-3 h-3 bg-namibia-terracotta rounded-full mx-auto mb-2"></div>

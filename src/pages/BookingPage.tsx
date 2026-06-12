@@ -176,7 +176,7 @@ const BookingPage = () => {
                         name="tour" 
                         value={formData.tour} 
                         onChange={handleChange} 
-                        placeholder="e.g., Dune 7 Tour" 
+                        placeholder="e.g., Dune 5 Tour"
                         required 
                         className="w-full" 
                       />
